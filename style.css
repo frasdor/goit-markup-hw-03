@@ -15,42 +15,101 @@
 body{
     font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
     color: var(--navy-blue);
+    margin: 0;
+}
+
+/******* header ******/
+.top-line{
+    background-color: var(--white);
+    padding: 0 156px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+.logo{
+    margin:0;
 }
 .menu-nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
+    display: flex;
+    gap: 16px;
 }
 
-.menu-item-contacts {
+.link {
     /* color: var(--navy-blue); */
     cursor: pointer;
 }
 
-.menu-item-contacts:hover {
+.link:hover {
     color:var(--ocean);
     cursor: pointer;
 }
 
-.menu-item-contacts:focus {
+.link:focus {
     color:var(--ocean);
     cursor: pointer;
 }
-address {
+.link:active {
+    text-decoration: underline;
+}
+.contacts {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--slate);
+    display: flex;
+    gap: 24px;
 }
 
-button {
+
+/***** hero *****/
+.hero-image {
+    /* height: calc(100vh-200px); */
+    background-color: var(--navy-blue);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* width: 1440px; */
+    height: 600px;
+}
+.hero-image-text{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--white);
+    word-wrap: break-word;
+    max-width: 440px;
+}
+
+.hero-btn {
+    padding: 1rem 2rem;
     background-color:var(--iris);
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--white);
 }
 
-button:hover {
+.hero-btn:hover {
     background-color:var(--ocean);
     cursor: pointer;
+    opacity: 0.85;
 }
 h1{
     font-family: "Raleway", sans-serif;
@@ -69,27 +128,6 @@ a:hover {
     color:var(--ocean);
 }
 
-.hero-image{
-    background-color: var(--navy-blue);
-    width: 1440px;
-    height: 600px;
-}
-.hero-image-text{
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 107%;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--white);
-}
-
-button {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.04em;
-    color: var(--white);
-}
 
 h3 {
     font-weight: 500;
@@ -130,6 +168,13 @@ h2 {
     color: var(--slate);
 }
 
+/* Our Portfolio */
+.portfolio {
+    
+}
+
+
+/* footer */
 footer{
     background-color: var(--navy-blue);
 }
