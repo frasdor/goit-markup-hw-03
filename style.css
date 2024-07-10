@@ -18,10 +18,16 @@ body{
     margin: 0;
 }
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
 /******* header ******/
 .top-line{
     background-color: var(--white);
-    padding: 0 156px;
+    padding: 0;
     height: 100px;
     display: flex;
     align-items: center;
@@ -30,6 +36,7 @@ body{
 .logo{
     margin:0;
 }
+
 .menu-nav{
     list-style-type: none;
     margin: 0;
@@ -169,11 +176,48 @@ h2 {
 }
 
 /* Our Portfolio */
-.portfolio {
-    
+.products {
+    --card-width: 360px;
+    padding:0px;
+    min-height: calc(100vh);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products-list{
+    margin:0;
+    padding:0;
+    list-style-type: none; 
+    display: flex;
+   flex-wrap: wrap;
+    gap: 24px;
+    max-width: calc( 3* var(--card-width) + 55px);
 }
 
+.products-item{ 
+    width: calc((100% - 48px) / 3);
+} 
+.products-link {
+    text-decoration: none;
+   
+}
+.card {
+    border: 1px solid var(--cornflower);
+    display:flex;
+    flex-direction:column;
+}
 
+/* .card-image {
+    width: 360px;
+    height: 300px;
+} */
+.card-info {
+    background-color: var(--white);
+    padding: 12px 4px;
+}
+.card-name {
+
+}
 /* footer */
 footer{
     background-color: var(--navy-blue);
