@@ -36,6 +36,10 @@ body{
 .logo{
     margin:0;
 }
+.web {
+    color: var(--iris)
+
+}
 
 .menu-nav{
     list-style-type: none;
