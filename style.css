@@ -29,12 +29,14 @@ body{
     margin: 0 auto;
     padding: 0 15px; 
 }
+.section {
+    padding: 120px 0;
+}
 
 /******* header ******/
 .top-line{
     background-color: var(--white);
     padding: 0;
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content:space-between ;
@@ -43,6 +45,7 @@ body{
 
 .logo{
     margin:0;
+    margin-right: 76px;
 }
 .web {
     color: var(--iris)
@@ -57,12 +60,13 @@ body{
     line-height: 150%;
     letter-spacing: 0.02em;
     display: flex;
-    gap: 16px;
+    gap: 40px;
 }
 
 .link {
     /* color: var(--navy-blue); */
     cursor: pointer;
+    padding: 24px 0;
 }
 
 .link:hover {
@@ -83,7 +87,8 @@ body{
     letter-spacing: 0.02em;
     color: var(--slate);
     display: flex;
-    gap: 24px;
+    gap: 40px;
+    margin-left: 332px;
 }
 
 
@@ -98,8 +103,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    /* width: 1440px; */
-    /* height: 600px; */
+    padding: 188px 0;
 }
 .hero-image-text{
     font-weight: 700;
@@ -188,7 +192,7 @@ p {
     color: var(--navy-blue);
 }
 .team-card {
-    padding: 0;
+    padding: 120px 156px; /*tu dodalam */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,16 +215,21 @@ p {
     width: calc((100% - 72px) / 4);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0 0 10px 10px;
+    
 }
 
 .team-card-info {
 background-color: var(--white);
 border-radius: 0 0 10px 10px;
+padding: 32px 16px;
 }
 
-.team-card-image {
-    overflow: hidden;
 
+.team-card-image {
+    /* overflow: visible; */
+    object-fit: cover;
+    height: 100%;
+  width: 100%;
 }
 
 .team-member-name{
@@ -275,15 +284,15 @@ border-radius: 0 0 10px 10px;
     background-color: var(--white);
     padding: 12px 4px;
     border: 1px solid var(--cornflower);
+    padding: 32px 16px;
 }
-.card-name {
 
-}
 /* footer */
-footer{
+.page-footer{
     background-color: var(--navy-blue);
+    padding: 100px 0; 
 }
-footer a {
+.page-footer a {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 117%;
@@ -292,9 +301,10 @@ footer a {
     color: var(--cloud);
 }
 
-footer p {
+.text-footer {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--cloud);
+    width: 264px;
 }
