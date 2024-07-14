@@ -37,6 +37,7 @@ body{
 .top-line{
     background-color: var(--white);
     padding: 0;
+    /* margin:; */
     display: flex;
     align-items: center;
     justify-content:space-between ;
@@ -91,6 +92,9 @@ body{
     margin-left: 332px;
 }
 
+.section {
+    padding: 120px 0; 
+    } 
 
 /***** hero *****/
 .hero-image {
@@ -183,7 +187,7 @@ p {
 
 }
 /* h2 */
-.section-title {
+.section-title {    
     font-weight: 700;
     font-size: 36px;
     line-height: 111%;
@@ -192,7 +196,7 @@ p {
     color: var(--navy-blue);
 }
 .team-card {
-    padding: 120px 156px; /*tu dodalam */
+    padding: 120px 0px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,8 +232,6 @@ padding: 32px 16px;
 .team-card-image {
     /* overflow: visible; */
     object-fit: cover;
-    height: 100%;
-  width: 100%;
 }
 
 .team-member-name{
