@@ -101,7 +101,7 @@ body{
     /* height: calc(100vh-200px); */
     background-color: var(--navy-blue);
     color: var(--white);
-
+    text-align: center; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,11 +117,13 @@ body{
     text-align: center;
     color: var(--white);
     word-wrap: break-word;
-    max-width: 440px;
+    width: 496px;
+    margin: auto;
 }
 
 .hero-btn {
     padding: 1rem 2rem;
+    margin-top: 48px;
     background-color:var(--iris);
     cursor: pointer;
     border: none;
@@ -170,7 +172,7 @@ p {
 }
 
 .feature{
-    padding:0px;
+    padding: 120px 0px; 
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -184,7 +186,9 @@ p {
     display: flex;
     flex-direction: row;
     gap: 24px;
-
+}
+.feature-description {
+    letter-spacing: normal;
 }
 /* h2 */
 .section-title {    
@@ -194,6 +198,8 @@ p {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--navy-blue);
+    padding-bottom: 72px;
+    margin-bottom: 8px;
 }
 .team-card {
     padding: 120px 0px; 
@@ -255,7 +261,7 @@ padding: 32px 16px;
 
 /* Our Portfolio */
 .products {
-    padding: 0px;
+    padding: 120px 0px; 
     display: flex;
     flex-direction: column;
     align-items: center;
