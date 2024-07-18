@@ -171,12 +171,11 @@ p {
     color: var(--slate);
 }
 
-.feature{
+.feature {
     padding: 120px 0px; 
     display:flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .feature-list {
@@ -187,6 +186,11 @@ p {
     flex-direction: row;
     gap: 24px;
 }
+
+.feature-title {
+    margin-bottom: 8px;
+}
+
 .feature-description {
     letter-spacing: normal;
 }
@@ -247,6 +251,7 @@ padding: 32px 16px;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--navy-blue);
+    margin-bottom: 8px;
 }
 
 .team-member-role{
@@ -293,6 +298,10 @@ padding: 32px 16px;
     padding: 12px 4px;
     border: 1px solid var(--cornflower);
     padding: 32px 16px;
+}
+
+.card-name {
+    margin-bottom: 8px;
 }
 
 /* footer */
